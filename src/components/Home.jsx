@@ -58,7 +58,7 @@ const Home = () => {
     ]
     return (
         <>
-            <Navbar />
+            {/* <Navbar /> */}
             <div className="bg-[#f7f7f8] pt-8 place-items-center">
                 {/* HERO info SECTION */}
                 <div className="w-[90%] border text-center space-y-2 pb-7">
@@ -78,9 +78,9 @@ const Home = () => {
 
                 {/* Support Teams Logo */}
 
-                <div className="">
+                <div className=" p-3 m-3 mb-1 w-full place-items-center">
                     {/* Small screens → only 3 */}
-                    <div className="flex space-x-4 justify-center md:hidden">
+                    <div className="flex space-x-4 bg-[#ffffff] w-[90%] justify-center md:hidden">
                         {supportTeams.slice(0, 4).map(team => (
                             <a key={team.id} href={team.link} target="_blank" rel="noopener noreferrer">
                                 <img src={team.image} alt={`Team ${team.id}`} className="w-16 h-16" />
@@ -89,7 +89,7 @@ const Home = () => {
                     </div>
 
                     {/* Medium+ screens → all 7 */}
-                    <div className="hidden md:flex space-x-4 justify-center">
+                    <div className="hidden md:flex bg-[#ffffff] w-[90%] space-x-4 justify-center">
                         {supportTeams.map(team => (
                             <a key={team.id} href={team.link} target="_blank" rel="noopener noreferrer">
                                 <img src={team.image} alt={`Team ${team.id}`} className="w-16 h-16" />
@@ -100,7 +100,7 @@ const Home = () => {
 
                 {/* Homepage Video */}
 
-                <div className="flex justify-center p-3">
+                <div className="flex justify-center w-full ">
                     <img src={videoImg} alt="" className='w-[90%]' />
                 </div>
 
@@ -116,7 +116,7 @@ const Home = () => {
                     </div>
                     <div className=" gap-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center-safe ">
                         {benefits.map(benefit =>
-                            <div key={benefit.id} className=" w-4/5 md:w-full p-5 bg-[#ffffff]">
+                            <div key={benefit.id} className=" w- md:h-full p-5 bg-[#ffffff]">
                                 <h1 className='font-extrabold text-[60px] flex justify-end-safe '>{benefit.num}</h1>
                                 <h2 className="font-bold text-[20px]"> {benefit.title}</h2>
                                 <p className=" text-[16px]">{benefit.text}</p>
@@ -140,12 +140,12 @@ const Home = () => {
                         {courses.map(course =>
                             <div key={course.id} className="bg-[#ffffff] p-5 flex flex-col  space-y-5 rounded ">
                                 <img src={course.image} alt="" />
-                                <div className="">
+                                <div className="sm:flex justify-between">
                                     <div className="flex space-x-5 py-3">
                                         <span className='border p-2 bg-[#ffffff] rounded-[10px]'>{course.duration}</span>
                                         <span className='border p-2 bg-[#ffffff] rounded-[10px]'>{course.difficulty}</span>
                                     </div>
-                                    <h2 className='pb-[10px] font-medium'>{course.Tutor}</h2>
+                                    <h2 className='pb-[10px] font-medium self-center'>{course.Tutor}</h2>
                                 </div>
                                 <div className="">
                                     <h2 className="text-[24px] font-bold py-3"> {course.name}</h2>
@@ -245,7 +245,7 @@ const Home = () => {
                 </div>
 
             </div>
-            <Footer />
+            {/* <Footer /> */}
         </>
     )
 }

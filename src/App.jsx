@@ -1,13 +1,23 @@
 import React from 'react'
-import Navbar from './components/Navbar.jsx'
-import Footer from './components/Footer.jsx'
-import Home from './components/Home.jsx'
-import CoursePage from './components/coursePage.jsx'
+import { Routes, Route } from 'react-router-dom'
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
+import Home from './components/Home'
+import CoursePage from './components/CoursePage'
+import CourseOpenPage from './components/CourseOpenPage'
 
 const App = () => {
   return (
     <>
-    <CoursePage/>
+      <Navbar />   {/* Always visible */}
+      
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/courses' element={<CoursePage />} />
+        <Route path='/course' element={<CourseOpenPage />} />
+      </Routes>
+      
+      <Footer />   {/* Always visible */}
     </>
   )
 }

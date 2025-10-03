@@ -3,6 +3,7 @@ import Navbar from './Navbar'
 import web1 from '../assets/CourseCatg/web1.png'
 import web2 from '../assets/CourseCatg/web2.png'
 import web3 from '../assets/CourseCatg/web3.png'
+import Footer from './Footer'
 
 
 const CoursePage = () => {
@@ -93,7 +94,7 @@ const CoursePage = () => {
 
     return (
         <>
-            <Navbar />
+            {/* <Navbar /> */}
             <div className="bg-[#f7f7f8] px-3">
                 {/* CoursePage Intro  */}
                 <div className=" flex flex-col md:flex-row md:gap-10 p-3 items-center justify-center mb-5">
@@ -144,11 +145,12 @@ const CoursePage = () => {
 
                                 </div>
                             </div>
+                           
                         )}
                     </div>
                 </div>
             </div>
-
+        {/* <Footer/> */}
         </>
     )
 }

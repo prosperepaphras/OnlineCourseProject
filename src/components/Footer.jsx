@@ -2,7 +2,7 @@ import React from 'react'
 import logo from "../assets/Logo.png"
 const Footer = () => {
     return (
-        <footer className='m-8'>
+        <footer className='m-8 mb-3'>
             <div className=" md:flex space-y-5 justify-around">
              <div className=" flex flex-col space-y-3 md:space-y-4">
                 <img src={logo} alt="" className='w-9 ' />
