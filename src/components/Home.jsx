@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom"; 
 import Navbar from './Navbar'
 import Footer from './Footer'
 import supportImg1 from "../assets/supportTeams/Team1.png"
@@ -61,7 +62,7 @@ const Home = () => {
            
             <div className="bg-[#f7f7f8] pt-8 place-items-center px-[5%]  ">
                 {/* HERO info SECTION */}
-                <div className="w-[70%]  text-center space-y-2 p-3 pb-7 md:w-fit">
+                <div className="w-[90%]  text-center space-y-2 p-3 pb-7 md:w-fit">
                     <div className="flex bg-white justify-center p-3 space-x-3 items-center rounded">
                         <i className="bx bxs-zap bg-[#FFF4E5] p-2 rounded"></i>
                         <p className='font-semibold text-[16px] sm:text-[28px] lg:text-[36px]' > <span className='text-[#ff9500]'>Unlock</span> Your Creative Potential</p>
@@ -70,9 +71,9 @@ const Home = () => {
                         <p className='text-[24px] md:text-[24px] font-medium'>with Online Design and Development Courses.</p>
                         <p className='text-[14px] lg:text-[18px] text-pretty text-center'>Learn from Industry Experts and Enhance Your Skills.</p>
                     </div>
-                    <div className=" flex space-x-3 justify-center mt-7">
-                        <a href="" className="bg-[#ff9500] text-white p-3 rounded-[10px]">Explore Courses</a>
-                        <a href="" className="bg-[#ffffff] text-black p-3 rounded-[10px]"> View Pricing</a>
+                    <div className=" flex justify-center items-center gap-5 p-3">
+                        <Link to="/courses" className="bg-[#ff9500] text-[14px] sm:text-[14px] text-white p-3 rounded-[10px] w-fit ">Explore Courses</Link>
+                       <Link to="/pricing" className="bg-[#ffffff] text-black p-3 rounded-[10px] w-fit"> View Pricing</Link>
                     </div>
                 </div>
 
