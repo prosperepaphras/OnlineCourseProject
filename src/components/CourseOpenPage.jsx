@@ -49,7 +49,7 @@ const CourseOpenPage = () => {
 ]
     return (
         <>
-            {/* <Navbar /> */}
+            
             <div className="bg-[#f7f7f8] px-6 space-y-10">
                 {/* CourseOpenPage Intro  */}
                 <div className=" flex flex-col md:flex-row md:gap-10 p-3 items-center justify-center mb-5">
@@ -58,9 +58,9 @@ const CourseOpenPage = () => {
                 </div>
 
                 {/* Course Video  */}
-                <div className="place-items-center w-full my-[5%] ">
-                    <img src={ux1} alt="" className='object-fit object w-[90%] md:w-[80%] md:h-[400px] ' />
-                </div>
+                <div className="flex justify-center w-full ">
+                                    <img src={ux1} alt="" className='w-full  h-auto object-cover' />
+                                </div>
 
                 {/* Course Details  */}
                 <div className=" px-[10%] py-4 pb-10 grid md:grid-cols-2 gap-8 ">
@@ -98,7 +98,6 @@ const CourseOpenPage = () => {
                 </div>
 
             </div>
-            {/* <Footer/> */}
         </>
     )
 }
