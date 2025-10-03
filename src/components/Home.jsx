@@ -8,7 +8,7 @@ import supportImg4 from "../assets/supportTeams/Team4.png"
 import supportImg5 from "../assets/supportTeams/Team5.png"
 import supportImg6 from "../assets/supportTeams/Team6.png"
 import supportImg7 from "../assets/supportTeams/Team7.png"
-import videoImg from "../assets/videoImg.png"
+import videoImg from "../assets/videoImg.svg"
 import Course1 from "../assets/CoursesImg/Course1.png"
 import Course2 from "../assets/CoursesImg/Course2.png"
 import Course3 from "../assets/CoursesImg/Course3.png"
@@ -58,17 +58,17 @@ const Home = () => {
     ]
     return (
         <>
-            {/* <Navbar /> */}
-            <div className="bg-[#f7f7f8] pt-8 place-items-center">
+           
+            <div className="bg-[#f7f7f8] pt-8 place-items-center px-[5%]  ">
                 {/* HERO info SECTION */}
-                <div className="w-[90%] border text-center space-y-2 pb-7">
-                    <div className="flex bg-white justify-center p-3 space-x-3 items-center">
-                        <i className="bx bxs-zap bg-[#FFF4E5] p-2"></i>
-                        <p> <span className='text-[#ff9500] text-[16px]'>Unlock</span> Your Creative Potential</p>
+                <div className="w-[70%]  text-center space-y-2 p-3 pb-7 md:w-fit">
+                    <div className="flex bg-white justify-center p-3 space-x-3 items-center rounded">
+                        <i className="bx bxs-zap bg-[#FFF4E5] p-2 rounded"></i>
+                        <p className='font-semibold text-[16px] sm:text-[28px] lg:text-[36px]' > <span className='text-[#ff9500]'>Unlock</span> Your Creative Potential</p>
                     </div>
                     <div className="">
-                        <p className='text-[24px]'>with Online Design and Development Courses.</p>
-                        <p className='text-[14px] text-pretty'>Learn from Industry Experts and Enhance Your Skills.</p>
+                        <p className='text-[24px] md:text-[24px] font-medium'>with Online Design and Development Courses.</p>
+                        <p className='text-[14px] lg:text-[18px] text-pretty text-center'>Learn from Industry Experts and Enhance Your Skills.</p>
                     </div>
                     <div className=" flex space-x-3 justify-center mt-7">
                         <a href="" className="bg-[#ff9500] text-white p-3 rounded-[10px]">Explore Courses</a>
@@ -78,9 +78,9 @@ const Home = () => {
 
                 {/* Support Teams Logo */}
 
-                <div className=" p-3 m-3 mb-1 w-full place-items-center">
+                <div className=" mb-1 w-full">
                     {/* Small screens → only 3 */}
-                    <div className="flex space-x-4 bg-[#ffffff] w-[90%] justify-center md:hidden">
+                    <div className="flex space-x-4 bg-[#ffffff] justify-around md:hidden">
                         {supportTeams.slice(0, 4).map(team => (
                             <a key={team.id} href={team.link} target="_blank" rel="noopener noreferrer">
                                 <img src={team.image} alt={`Team ${team.id}`} className="w-16 h-16" />
@@ -89,7 +89,7 @@ const Home = () => {
                     </div>
 
                     {/* Medium+ screens → all 7 */}
-                    <div className="hidden md:flex bg-[#ffffff] w-[90%] space-x-4 justify-center">
+                    <div className="hidden md:flex bg-[#ffffff] space-x-4 justify-around">
                         {supportTeams.map(team => (
                             <a key={team.id} href={team.link} target="_blank" rel="noopener noreferrer">
                                 <img src={team.image} alt={`Team ${team.id}`} className="w-16 h-16" />
@@ -101,7 +101,7 @@ const Home = () => {
                 {/* Homepage Video */}
 
                 <div className="flex justify-center w-full ">
-                    <img src={videoImg} alt="" className='w-[90%]' />
+                    <img src={videoImg} alt="" className='w-full  h-auto object-cover' />
                 </div>
 
                 {/* Benefits Section  */}
@@ -172,11 +172,11 @@ const Home = () => {
                             <div className="bg-[#ffffff] p-5 space-y-5 rounded-[10px]">
                                 <p className='text-pretty'>{test.text}</p>
                                 <div className="flex justify-between border-t-1 pt-5">
-                                    <div className="flex space-x-5 items-center">
+                                    <div className="flex space-x-3 items-center text-[16px]">
                                         <img src={test.avatar} alt="" />
-                                        <h3 className='text-[18px] font-medium'>{test.name}</h3>
+                                        <h3 className=' font-medium'>{test.name}</h3>
                                     </div>
-                                    <a href="" className="self-center border p-3 rounded font-medium">Read Full Story</a>
+                                    <a href="" className="self-center border p-3 rounded font-medium text-[14px]">Read Full Story</a>
                                 </div>
                             </div>)}
                     </div>
