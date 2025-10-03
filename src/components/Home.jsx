@@ -106,8 +106,8 @@ const Home = () => {
 
                 {/* Benefits Section  */}
 
-                <div className=" py-4 px-8 flex flex-col items-center space-y-9">
-                    <div className="">
+                <div className=" py-4 px-8 flex flex-col space-y-9">
+                    <div className=" ">
                         <h1 className='font-bold text-[36px] mb-3' >Benefits</h1>
                         <div className="space-y-5">
                             <p className='text-pretty text-[20px] text-gray-600' >Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio facilis voluptatibus sapiente unde ea a dignissimos repellat soluta!</p>
@@ -128,7 +128,7 @@ const Home = () => {
 
                 {/* Courses Section  */}
 
-                <div className="py-4 px-8 flex flex-col items-center space-y-9">
+                <div className="py-4 px-8 flex flex-col space-y-9">
                     <div className="">
                         <h1 className='font-bold text-[36px] mb-3' >Our Courses</h1>
                         <div className="space-y-5">
@@ -159,7 +159,7 @@ const Home = () => {
 
                 {/* Testmonials Section  */}
 
-                <div className="py-4 px-8 flex flex-col items-center space-y-9">
+                <div className="py-4 px-8 flex flex-col space-y-9">
                     <div className="">
                         <h1 className='font-bold text-[36px] mb-3' >Our Testimonials</h1>
                         <div className="space-y-5">
@@ -185,7 +185,7 @@ const Home = () => {
 
                 {/* pricing Section */}
 
-                <div className="py-4 px-5 items-center ">
+                <div className="py-4 px-8 ">
                     <div className=" space-y-4">
                         <h1 className='font-bold text-[36px] mb-3'>Our Pricing</h1>
                         <div className="space-y-7 flex flex-col md:flex-row ">
