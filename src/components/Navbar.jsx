@@ -1,14 +1,28 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";   // ✅ Import Link
 import logo from "../assets/Logo.png";
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
+      const navRef = useRef(null)
+
+         // Close menu if click is outside navbar
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (navRef.current && !navRef.current.contains(event.target)) {
+                setIsOpen(false)
+            }
+        }
+        document.addEventListener('mousedown', handleClickOutside)
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside)
+        }
+    }, [])
 
     return (
         <>
-            <nav className="w-full bg-[#f7f7f8] border-b space-y-3 border-[#dcdcdc] p-3">
+            <nav ref={navRef} className="w-full bg-[#f7f7f8] border-b space-y-3 border-[#dcdcdc] p-3">
                 <div className="bg-[#ff9500] p-2 rounded flex justify-center gap-5 text-white">
                     <p className="text-center text-[14px]">
                         Free Courses 🌟 Sale Ends Soon, Get It Now
