@@ -111,7 +111,7 @@ const Home = () => {
                     <div className=" ">
                         <h1 className='font-bold text-[36px] mb-3' >Benefits</h1>
                         <div className="space-y-5">
-                            <p className='text-pretty text-[20px] text-gray-600' >Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio facilis voluptatibus sapiente unde ea a dignissimos repellat soluta!</p>
+                            <p className='text-pretty text-[20px] text-gray-600'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio facilis voluptatibus sapiente unde ea a dignissimos repellat soluta!</p>
                             <a href=" " className=" bg-[#ffffff] p-3 rounded"> View All</a>
                         </div>
                     </div>
@@ -121,7 +121,7 @@ const Home = () => {
                                 <h1 className='font-extrabold text-[60px] flex justify-end-safe '>{benefit.num}</h1>
                                 <h2 className="font-bold text-[20px]"> {benefit.title}</h2>
                                 <p className=" text-[16px]">{benefit.text}</p>
-                                <span className='flex justify-end'><i class='bx bx-right-arrow-alt text-2xl -rotate-45 flex text-[2rem] bg-white'></i></span>
+                                <span className='flex justify-end'><i class='bx bx-right-arrow-alt text-2xl flex text-[28px] bg-[#f7f7f8] text-[#ff9500] border p-2 border-[#f7f7f8] rounded-[10px]'></i></span>
 
                             </div>)}
                     </div>
