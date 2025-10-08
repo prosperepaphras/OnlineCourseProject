@@ -63,7 +63,7 @@ export const SignUp = () => {
                             />
                             Sign Up with Google
                         </button>
-                        <p className="text-center">
+                        <p className="text-center text-pretty">
                             Already have an account?<Link to="/login" className="underline">Login</Link>
                             </p>
                     </form>

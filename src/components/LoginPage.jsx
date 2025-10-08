@@ -28,7 +28,7 @@ export const LoginPage = () => {
                 <div className=" bg-white place-items-center rounded-lg p-10 lg:w-[50%]">
                     <h1 className='font-medium text-[40px]'>Login</h1>
                     <p  className='font-light text-[20px] text-center'>Welcome back! Please log in to access your account. </p>
-                    <form className=' grid p-5 px-10 w-full space-y-2' >
+                    <form className=' grid p-3 px-10 w-full space-y-2' >
                             <label htmlFor="mail" className='block'>Email</label>
                             <input className='bg-[#f7f7f8] border border-gray-400 rounded-[5px] p-2 w-full' type="email" name="mail" id="mail" placeholder='abc@gmail.com' value={email} onChange={emailValue} />
                        
@@ -61,7 +61,7 @@ export const LoginPage = () => {
                             />
                             Login with Google
                         </button>
-                        <p className="text-center">
+                        <p className="text-center text-pretty">
                             Don't have an account? <Link to="/signUp" className="underline">Sign Up</Link> 
                             </p>
                     </form>
