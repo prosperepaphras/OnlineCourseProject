@@ -23,12 +23,12 @@ export const SignUp = () => {
 
     return (
         <>
-            <div className=" lg:flex flex-row-reverse bg-[#f7f7f8] p-[5%]">
+            <div className=" lg:flex flex-row-reverse bg-[#f7f7f8] p-[3%]">
                 
-                <div className=" bg-white place-items-center rounded-lg p-10 lg:w-[50%]">
+                <div className=" bg-white place-items-center rounded-lg p-7 lg:w-[50%]">
                     <h1 className='font-medium text-[40px]'>Sign Up</h1>
                     <p  className='font-light text-[20px] text-center'>Create an account to unlock exclusive features. </p>
-                    <form className=' grid p-5 px-10 w-full space-y-2' >
+                    <form className=' grid p-5 px-6 w-full space-y-2' >
                         <label htmlFor="mail" className='block'>Full Name</label>
                             <input className='bg-[#f7f7f8] border border-gray-400 rounded-[5px] p-2 w-full' type="text" name="mail" id="mail" placeholder='Enter your Name' value={email} onChange={emailValue} />
                             <label htmlFor="mail" className='block'>Email</label>
