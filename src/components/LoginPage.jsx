@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import avatar1 from "../assets/Avatar/avatar1.png"
 // import avatar2 from "../assets/Avatar/avatar2.png"
 // import avatar3 from "../assets/Avatar/avatar3.png"
@@ -61,7 +62,7 @@ export const LoginPage = () => {
                             Login with Google
                         </button>
                         <p className="text-center">
-                            Don't have an account? <a href="" className="underline">Sign Up</a>
+                            Don't have an account? <Link to="/signUp" className="underline">Sign Up</Link> 
                             </p>
                     </form>
                 </div>

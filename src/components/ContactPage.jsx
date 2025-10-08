@@ -40,9 +40,9 @@ const ContactPage = () => {
     };
 
     const contactInfo = [
-        {id: 1, icon:<Mail size={30} />, detail: 'support@skillbridge.com'},
-        {id: 2, icon:<Phone size={30} />, detail: '+91 00000 00000'},
-        {id: 3, icon:<MapPin size={30} />, detail: 'Some Where in the World'}
+        {id: 1, icon:<Mail size={25} />, detail: 'support@skillbridge.com'},
+        {id: 2, icon:<Phone size={25} />, detail: '+91 00000 00000'},
+        {id: 3, icon:<MapPin size={25} />, detail: 'Some Where in the World'}
     ]
     return (
         <>
@@ -54,7 +54,7 @@ const ContactPage = () => {
                 </div>
 
                 {/* Contact Form  */}
-                <div className="contact-form border bg-white p-6 rounded-md max-w-4xl mx-auto">
+                <div className="contact-form grid md:grid-cols-2 gap-10 bg-white p-10 rounded-md max-w-7xl mx-auto">
                     <form onSubmit={handleSubmit} className="space-y-4">
                         {/* First Name and Last Name */}
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -68,7 +68,7 @@ const ContactPage = () => {
                                     onChange={handleChange}
                                     required
                                     placeholder="Enter First Name"
-                                    className="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:ring-orange-500 focus:border-orange-500"
+                                    className="mt-1 block w-full border  border-gray-300 bg-[#f7f7f8] rounded-md p-2 "
                                 />
                             </div>
                             <div>
@@ -81,7 +81,7 @@ const ContactPage = () => {
                                     onChange={handleChange}
                                     required
                                     placeholder="Enter Last Name"
-                                    className="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:ring-orange-500 focus:border-orange-500"
+                                    className="mt-1 block w-full border border-gray-300 bg-[#f7f7f8] rounded-md p-2 "
                                 />
                             </div>
                         </div>
@@ -98,7 +98,7 @@ const ContactPage = () => {
                                     onChange={handleChange}
                                     required
                                     placeholder="Enter your Email"
-                                    className="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:ring-orange-500 focus:border-orange-500"
+                                    className="mt-1 block w-full border border-gray-300 bg-[#f7f7f8] rounded-md p-2 "
                                 />
                             </div>
                             <div>
@@ -110,7 +110,7 @@ const ContactPage = () => {
                                     value={formData.phone}
                                     onChange={handleChange}
                                     placeholder="Enter Phone Number"
-                                    className="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:ring-orange-500 focus:border-orange-500"
+                                    className="mt-1 block w-full border  border-gray-300 bg-[#f7f7f8] rounded-md p-2 "
                                 />
                             </div>
                         </div>
@@ -125,7 +125,7 @@ const ContactPage = () => {
                                 value={formData.subject}
                                 onChange={handleChange}
                                 placeholder="Enter your Subject"
-                                className="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:ring-orange-500 focus:border-orange-500"
+                                className="mt-1 block w-full border  border-gray-300 bg-[#f7f7f8] rounded-md p-2"
                             />
                         </div>
 
@@ -139,7 +139,7 @@ const ContactPage = () => {
                                 onChange={handleChange}
                                 required
                                 placeholder="Enter your Message here..."
-                                className="mt-1 block w-full border border-gray-300 rounded-md p-2 h-32 resize-none focus:ring-orange-500 focus:border-orange-500"
+                                className="mt-1 block w-full border  border-gray-300 bg-[#f7f7f8] rounded-md p-2 h-32 resize-none "
                             />
                         </div>
 
@@ -154,11 +154,11 @@ const ContactPage = () => {
                         </div>
                     </form>
 
-                    <div className="">
+                    <div className="grid gap-5 p-4 border-t md:border-l md:border-t-0 border-[#f7f7f8] place-items-center">
                         {contactInfo.map(info => 
-                            <div className="">
-                                <p>{info.icon}</p>
-                                <p>{info.detail}</p>
+                            <div className="p-5 bg-[#f7f7f8] w-4/5 place-items-center space-y-3 border border-[#e4e4e6] rounded-lg">
+                                <p className='border border-gray-200 p-3 bg-gray-200 rounded-lg'>{info.icon}</p>
+                                <p className=''>{info.detail}</p>
                             </div>
                         )}
                     </div>

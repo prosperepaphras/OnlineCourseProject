@@ -22,7 +22,7 @@ export default function Navbar() {
 
     return (
         <>
-            <nav ref={navRef} className="w-full bg-[#f7f7f8] border-b space-y-3 border-[#dcdcdc] p-3 sticky">
+            <nav ref={navRef} className="w-full bg-[#f7f7f8] border-b space-y-3 border-[#dcdcdc] p-3 sticky top-0 z-50">
                 <div className="bg-[#ff9500] p-2 rounded flex justify-center gap-5 text-white">
                     <p className="text-center text-[14px]">
                         Free Courses 🌟 Sale Ends Soon, Get It Now
