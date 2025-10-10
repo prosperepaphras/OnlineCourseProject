@@ -43,19 +43,19 @@ const Home = () => {
 
     const courses = [
         { id: 1, image: Course1, duration: "4 weeks", difficulty: 'Beginner', Tutor: "By John Smith", name: "Web Design Fundamentals", info: "Learn the fundamentals of web design, including HTML, CSS, and responsive design principles. Develop the skills to create visually appealing and user-friendly websites." },
-        { id: 2, image: Course2, duration: "6 weeks", difficulty: 'Beginner', Tutor: "By John Smith", name: "Web Design Fundamentals", info: "Learn the fundamentals of web design, including HTML, CSS, and responsive design principles. Develop the skills to create visually appealing and user-friendly websites." },
-        { id: 3, image: Course3, duration: "8 weeks", difficulty: 'Beginner', Tutor: "By John Smith", name: "Web Design Fundamentals", info: "Learn the fundamentals of web design, including HTML, CSS, and responsive design principles. Develop the skills to create visually appealing and user-friendly websites." },
-        { id: 4, image: Course4, duration: "10 weeks", difficulty: 'Beginner', Tutor: "By John Smith", name: "Web Design Fundamentals", info: "Learn the fundamentals of web design, including HTML, CSS, and responsive design principles. Develop the skills to create visually appealing and user-friendly websites." },
-        { id: 5, image: Course5, duration: "10 weeks", difficulty: 'Beginner', Tutor: "By John Smith", name: "Web Design Fundamentals", info: "Learn the fundamentals of web design, including HTML, CSS, and responsive design principles. Develop the skills to create visually appealing and user-friendly websites." },
-        { id: 6, image: Course6, duration: "10 weeks", difficulty: 'Beginner', Tutor: "By John Smith", name: "Web Design Fundamentals", info: "Learn the fundamentals of web design, including HTML, CSS, and responsive design principles. Develop the skills to create visually appealing and user-friendly websites." },
+        { id: 2, image: Course2, duration: "6 weeks", difficulty: 'Beginner', Tutor: "By Emily Johnson", name: "UI/UX Design", info: "Master the art of creating intuitive user interfaces (UI) and enhancing user experiences (UX). Learn design principles, wireframing, prototyping, and usability testing techniques." },
+        { id: 3, image: Course3, duration: "10 weeks", difficulty: 'Intermediate', Tutor: "By Michael Adams", name: "Front-End Web Development", info: "Become proficient in front-end web development. Learn HTML, CSS, JavaScript, and popular frameworks like Bootstrap and React. Build interactive and responsive websites." },
+        { id: 4, image: Course4, duration: "6 weeks", difficulty: 'Advance', Tutor: "By Jennifer Wilson", name: "Advanced JavaScript", info: "Take your JavaScript skills to the next level. Explore advanced concepts like closures, prototypes, asynchronous programming, and ES6 features. Build complex applications with confidence." },
+        { id: 5, image: Course5, duration: "10 weeks", difficulty: 'Intermediate', Tutor: "By David Brown", name: "Mobile App Development", info: "Dive into the world of mobile app development. Learn to build native iOS and Android applications using industry-leading frameworks like Swift and Kotlin." },
+        { id: 6, image: Course6, duration: "10 weeks", difficulty: 'Beginner', Tutor: "By John Smith", name: "Graphic Design for Beginners", info: "Discover the fundamentals of graphic design, including typography, color theory, layout design, and image manipulation techniques. Create visually stunning designs for print and digital media." },
 
     ]
 
     const testimonials = [
         { id: 1, avatar: avatar1, name: "Sarah L", text: "The web design course provided a solid foundation for me. The instructors were knowledgeable and supportive, and the interactive learning environment was engaging. I highly recommend it!" },
-        { id: 2, avatar: avatar2, name: "Sarah L", text: "The web design course provided a solid foundation for me. The instructors were knowledgeable and supportive, and the interactive learning environment was engaging. I highly recommend it!" },
-        { id: 3, avatar: avatar3, name: "Sarah L", text: "The web design course provided a solid foundation for me. The instructors were knowledgeable and supportive, and the interactive learning environment was engaging. I highly recommend it!" },
-        { id: 4, avatar: avatar4, name: "Sarah L", text: "The web design course provided a solid foundation for me. The instructors were knowledgeable and supportive, and the interactive learning environment was engaging. I highly recommend it!" }
+        { id: 2, avatar: avatar2, name: "Jason M", text: "The UI/UX design course exceeded my expectations. The instructor's expertise and practical assignments helped me improve my design skills. I feel more confident in my career now. Thank you!" },
+        { id: 3, avatar: avatar3, name: "Emily R", text: "The mobile app development course was fantastic! The step-by-step tutorials and hands-on projects helped me grasp the concepts easily. I'm now building my own app. Great course!" },
+        { id: 4, avatar: avatar4, name: "Michael K", text: "I enrolled in the graphic design course as a beginner, and it was the perfect starting point. The instructor's guidance and feedback improved my design abilities significantly. I'm grateful for this course!" }
     ]
     return (
         <>
@@ -137,7 +137,7 @@ const Home = () => {
                             <a href=" " className=" bg-[#ffffff] p-3 rounded"> View All</a>
                         </div>
                     </div>
-                    <div className="gap-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                    <div className="gap-10 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
                         {courses.map(course =>
                             <div key={course.id} className="bg-[#ffffff] p-5 flex flex-col  space-y-5 rounded ">
                                 <img src={course.image} alt="" />
@@ -211,8 +211,8 @@ const Home = () => {
                                     <p className='border text-[14px] text-[#4C4C4D] border-[#f7f7f8] rounded-[10px] flex p-1 w-4/5 items-center justify-center space-x-3'><i className="bx bx-check p-1 bg-[#FFF4E5] "></i> <h2 className=''>Access to selected free courses</h2></p>
                                     <p className='border text-[14px] text-[#4C4C4D] border-[#f7f7f8] rounded-[10px] flex p-1 w-4/5 items-center justify-center space-x-3'><i className="bx bx-check p-1 bg-[#FFF4E5] "></i> <h2 className=''>Access to selected free courses</h2></p>
                                     <p className='border text-[14px] text-[#4C4C4D] border-[#f7f7f8] rounded-[10px] flex p-1 w-4/5 items-center justify-center space-x-3'><i className="bx bx-check p-1 bg-[#FFF4E5] "></i> <h2 className=''>Access to selected free courses</h2></p>
-                                    <p className='border text-[14px] text-[#4C4C4D] border-[#f7f7f8] rounded-[10px] flex p-1 w-4/5 items-center justify-center space-x-3'><i className="bx bx-check p-1 bg-[#FFF4E5] "></i> <h2 className=''>Access to selected free courses</h2></p>
-                                    <p className='border text-[14px] text-[#4C4C4D] border-[#f7f7f8] rounded-[10px] flex p-1 w-4/5 items-center justify-center space-x-3'><i className="bx bx-check p-1 bg-[#FFF4E5] "></i> <h2 className=''>Access to selected free courses</h2></p>
+                                    <p className='border text-[14px] text-[#4C4C4D] border-[#f7f7f8] rounded-[10px] flex p-1 w-4/5 items-center justify-center space-x-3'><i className="bx bx-x p-1 bg-[#ffffff] border border-[#f7f7f8] "></i> <h2 className=''>Access to selected free courses</h2></p>
+                                    <p className='border text-[14px] text-[#4C4C4D] border-[#f7f7f8] rounded-[10px] flex p-1 w-4/5 items-center justify-center space-x-3'><i className="bx bx-x p-1 bg-[#ffffff] border border-[#f7f7f8] "></i> <h2 className=''>Access to selected free courses</h2></p>
 
                                     {/* Button  */}
 
