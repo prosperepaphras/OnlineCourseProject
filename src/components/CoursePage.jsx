@@ -19,74 +19,74 @@ const CoursePage = () => {
             tutor: "John Smith",
             curriculum: [
                 { id: 1, number: "01", phase: "Introduction to HTML" },
-                { id: 2, number: "02", phase: "Introduction to HTML" },
-                { id: 3, number: "03", phase: "Introduction to HTML" },
-                { id: 4, number: "04", phase: "Introduction to HTML" },
-                { id: 5, number: "05", phase: "Introduction to HTML" }
+                { id: 2, number: "02", phase: "Styling with CSS" },
+                { id: 3, number: "03", phase: "Introduction to Responsive Design" },
+                { id: 4, number: "04", phase: "Design Principles for Web" },
+                { id: 5, number: "05", phase: "Building a Basic Website" }
             ]
         },
         {
             id: 2,
-            name: "Web Design Fundamentals",
-            text: "Learn the fundamentals of web design, including HTML, CSS, and responsive design principles. Develop the skills to create visually appealing and user-friendly websites.",
+            name: "UI/UX Design",
+            text: "Master the art of creating intuitive user interfaces (UI) and enhancing user experiences (UX). Learn design principles, wireframing, prototyping, and usability testing techniques.",
             img: [web1, web2, web3],
-            duration: "4 Weeks",
-            difficulty: "Beginner",
+            duration: "6 Weeks",
+            difficulty: "Intermediate",
             tutor: "John Smith",
             curriculum: [
-                { id: 1, number: "01", phase: "Introduction to HTML" },
-                { id: 2, number: "02", phase: "Introduction to HTML" },
-                { id: 3, number: "03", phase: "Introduction to HTML" },
-                { id: 4, number: "04", phase: "Introduction to HTML" },
-                { id: 5, number: "05", phase: "Introduction to HTML" }
+                { id: 1, number: "01", phase: "Introduction to UI/UX Design" },
+                { id: 2, number: "02", phase: "User Research and Personas" },
+                { id: 3, number: "03", phase: "Wireframing and Prototyping" },
+                { id: 4, number: "04", phase: "Visual Design and Branding" },
+                { id: 5, number: "05", phase: "Usability Testing and Iteration" }
             ]
         },
         {
             id: 3,
-            name: "Web Design Fundamentals",
-            text: "Learn the fundamentals of web design, including HTML, CSS, and responsive design principles. Develop the skills to create visually appealing and user-friendly websites.",
+            name: "Mobile App Development",
+            text: "Dive into the world of mobile app development. Learn to build native iOS and Android applications using industry-leading frameworks like Swift and Kotlin.",
             img: [web1, web2, web3],
-            duration: "4 Weeks",
-            difficulty: "Beginner",
-            tutor: "John Smith",
+            duration: "8 Weeks",
+            difficulty: "Intermediate",
+            tutor: "David Brown",
             curriculum: [
-                { id: 1, number: "01", phase: "Introduction to HTML" },
-                { id: 2, number: "02", phase: "Introduction to HTML" },
-                { id: 3, number: "03", phase: "Introduction to HTML" },
-                { id: 4, number: "04", phase: "Introduction to HTML" },
-                { id: 5, number: "05", phase: "Introduction to HTML" }
+                { id: 1, number: "01", phase: "Introduction to Mobile App Development" },
+                { id: 2, number: "02", phase: "Fundamentals of Swift Programming (iOS)" },
+                { id: 3, number: "03", phase: "Fundamentals of Kotlin Programming (Android)" },
+                { id: 4, number: "04", phase: "Building User Interfaces" },
+                { id: 5, number: "05", phase: "App Deployment and Testing" }
             ]
         },
         {
             id: 4,
-            name: "Web Design Fundamentals",
-            text: "Learn the fundamentals of web design, including HTML, CSS, and responsive design principles. Develop the skills to create visually appealing and user-friendly websites.",
+            name: "Graphic Design for Beginners",
+            text: "Discover the fundamentals of graphic design, including typography, color theory, layout design, and image manipulation techniques. Create visually stunning designs for print and digital media.",
             img: [web1, web2, web3],
-            duration: "4 Weeks",
+            duration: "10 Weeks",
             difficulty: "Beginner",
-            tutor: "John Smith",
+            tutor: "Sarah Thompson",
             curriculum: [
-                { id: 1, number: "01", phase: "Introduction to HTML" },
-                { id: 2, number: "02", phase: "Introduction to HTML" },
-                { id: 3, number: "03", phase: "Introduction to HTML" },
-                { id: 4, number: "04", phase: "Introduction to HTML" },
-                { id: 5, number: "05", phase: "Introduction to HTML" }
+                { id: 1, number: "01", phase: "Introduction to Graphic Design" },
+                { id: 2, number: "02", phase: "Typography and Color Theory" },
+                { id: 3, number: "03", phase: "Layout Design and Composition" },
+                { id: 4, number: "04", phase: "Image Editing and Manipulation" },
+                { id: 5, number: "05", phase: "Designing for Print and Digital Media" }
             ]
         },
         {
             id: 5,
-            name: "Web Design Fundamentals",
-            text: "Learn the fundamentals of web design, including HTML, CSS, and responsive design principles. Develop the skills to create visually appealing and user-friendly websites.",
+            name: "Front-End Web Development",
+            text: "Become proficient in front-end web development. Learn HTML, CSS, JavaScript, and popular frameworks like Bootstrap and React. Build interactive and responsive websites.",
             img: [web1, web2, web3],
-            duration: "4 Weeks",
-            difficulty: "Beginner",
-            tutor: "John Smith",
+            duration: "10 Weeks",
+            difficulty: "Intermediate",
+            tutor: "Michael Adams",
             curriculum: [
-                { id: 1, number: "01", phase: "Introduction to HTML" },
-                { id: 2, number: "02", phase: "Introduction to HTML" },
-                { id: 3, number: "03", phase: "Introduction to HTML" },
-                { id: 4, number: "04", phase: "Introduction to HTML" },
-                { id: 5, number: "05", phase: "Introduction to HTML" }
+                { id: 1, number: "01", phase: "HTML Fundamentals" },
+                { id: 2, number: "02", phase: "CSS Styling and Layouts" },
+                { id: 3, number: "03", phase: "JavaScript Basics" },
+                { id: 4, number: "04", phase: "Building Responsive Websites" },
+                { id: 5, number: "05", phase: "Introduction to Bootstrap and React" }
             ]
         }
     ]
